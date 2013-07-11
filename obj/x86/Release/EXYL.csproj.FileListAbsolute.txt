@@ -1,0 +1,9 @@
+C:\Users\Chris\documents\visual studio 2010\Projects\EXYL\EXYL\bin\Release\EXYL.exe
+C:\Users\Chris\documents\visual studio 2010\Projects\EXYL\EXYL\bin\Release\EXYL.pdb
+C:\Users\Chris\documents\visual studio 2010\Projects\EXYL\EXYL\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Chris\documents\visual studio 2010\Projects\EXYL\EXYL\obj\x86\Release\EXYL.Game.resources
+C:\Users\Chris\documents\visual studio 2010\Projects\EXYL\EXYL\obj\x86\Release\EXYL.Properties.Resources.resources
+C:\Users\Chris\documents\visual studio 2010\Projects\EXYL\EXYL\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Chris\documents\visual studio 2010\Projects\EXYL\EXYL\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Chris\documents\visual studio 2010\Projects\EXYL\EXYL\obj\x86\Release\EXYL.exe
+C:\Users\Chris\documents\visual studio 2010\Projects\EXYL\EXYL\obj\x86\Release\EXYL.pdb

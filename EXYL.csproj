@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{43354490-68E1-4FFF-A560-828286350FAD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EXYL</RootNamespace>
+    <AssemblyName>EXYL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation.cs" />
+    <Compile Include="Boomerang.cs" />
+    <Compile Include="Damage.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game.designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameObject.cs" />
+    <Compile Include="ListRemover.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="Monster.cs" />
+    <Compile Include="Persist.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Platforms.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YellowHat.cs" />
+    <EmbeddedResource Include="Game.resx">
+      <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assassinate.bmp" />
+    <EmbeddedResource Include="Blob.bmp" />
+    <EmbeddedResource Include="BluePotion.bmp" />
+    <EmbeddedResource Include="Boomerang.bmp" />
+    <EmbeddedResource Include="Boomy.bmp" />
+    <EmbeddedResource Include="Cel.bmp" />
+    <EmbeddedResource Include="DoubleTap.bmp" />
+    <EmbeddedResource Include="FireBoar.bmp" />
+    <EmbeddedResource Include="FireBoom.bmp" />
+    <EmbeddedResource Include="GraySkillButton.bmp" />
+    <EmbeddedResource Include="GreenHat.bmp" />
+    <EmbeddedResource Include="HitAnim.bmp" />
+    <EmbeddedResource Include="Instructions.bmp" />
+    <EmbeddedResource Include="JobArrows.bmp" />
+    <EmbeddedResource Include="ManaElixir.bmp" />
+    <EmbeddedResource Include="NumEight.bmp" />
+    <EmbeddedResource Include="NumFive.bmp" />
+    <EmbeddedResource Include="NumFour.bmp" />
+    <EmbeddedResource Include="NumNine.bmp" />
+    <EmbeddedResource Include="NumOne.bmp" />
+    <EmbeddedResource Include="NumSeven.bmp" />
+    <EmbeddedResource Include="NumSix.bmp" />
+    <EmbeddedResource Include="NumThree.bmp" />
+    <EmbeddedResource Include="NumTwo.bmp" />
+    <EmbeddedResource Include="NumZero.bmp" />
+    <EmbeddedResource Include="OrangeSkillButton.bmp" />
+    <EmbeddedResource Include="OrangeSnail.bmp" />
+    <EmbeddedResource Include="Pepe.bmp" />
+    <EmbeddedResource Include="PersonJumping.bmp" />
+    <EmbeddedResource Include="PersonStanding.bmp" />
+    <EmbeddedResource Include="PersonThrowing.bmp" />
+    <EmbeddedResource Include="PersonThrowing2.bmp" />
+    <EmbeddedResource Include="PersonThrowing3.bmp" />
+    <EmbeddedResource Include="PersonWalking.bmp" />
+    <EmbeddedResource Include="Platform1.bmp" />
+    <EmbeddedResource Include="Platform10.bmp" />
+    <EmbeddedResource Include="Platform11.bmp" />
+    <EmbeddedResource Include="Platform12.bmp" />
+    <EmbeddedResource Include="Platform13.bmp" />
+    <EmbeddedResource Include="Platform14.bmp" />
+    <EmbeddedResource Include="Platform15.bmp" />
+    <EmbeddedResource Include="Platform16.bmp" />
+    <EmbeddedResource Include="Platform2.bmp" />
+    <EmbeddedResource Include="Platform3.bmp" />
+    <EmbeddedResource Include="Platform4.bmp" />
+    <EmbeddedResource Include="Platform5.bmp" />
+    <EmbeddedResource Include="Platform6.bmp" />
+    <EmbeddedResource Include="Platform7.bmp" />
+    <EmbeddedResource Include="Platform8.bmp" />
+    <EmbeddedResource Include="Platform9.bmp" />
+    <EmbeddedResource Include="Robiera.bmp" />
+    <EmbeddedResource Include="SkullCrusher.bmp" />
+    <EmbeddedResource Include="Snail.bmp" />
+    <EmbeddedResource Include="SnowMan.bmp" />
+    <EmbeddedResource Include="SnowRed.bmp" />
+    <EmbeddedResource Include="WarpAnim.bmp" />
+    <EmbeddedResource Include="WarpBoom.bmp" />
+    <EmbeddedResource Include="YellowHat.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GrappleBoom.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Platform17.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Yeti.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Toolbar.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
